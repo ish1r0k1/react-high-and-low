@@ -47,7 +47,7 @@ class App extends Component {
 
     if (n[0] === n[1]) {
       compared = 'DRAW'
-    } else if (n[0] < n[1] || n[1] === -1) {
+    } else if (n[0] < n[1] && n[0] !== -1 || n[1] === -1) {
       compared = 'HIGH'
     } else {
       compared = 'LOW'
